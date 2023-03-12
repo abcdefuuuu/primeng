@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ShareModule } from './share/share.module';
 import { FormComponent } from './form/form.component';
-import { PrimengModule } from './share/share.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +20,6 @@ import { PrimengModule } from './share/share.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ShareModule
-  ],
-  exports: [
-    ShareModule,
-    PrimengModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],

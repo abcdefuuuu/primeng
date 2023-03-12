@@ -8,7 +8,6 @@ import { PrimengModule } from './primeng/primeng.module';
   declarations: [],
   imports: [
     CommonModule,
-    PrimengModule
   ],
   exports: [
     PrimengModule,

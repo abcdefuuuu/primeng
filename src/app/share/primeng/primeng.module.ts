@@ -44,6 +44,8 @@ import { ChipsModule } from 'primeng/chips';
   declarations: [],
   imports: [
     CommonModule,
+  ],
+  exports:[
     InputTextModule,
     CheckboxModule,
     MenubarModule,
@@ -82,6 +84,6 @@ import { ChipsModule } from 'primeng/chips';
     TabMenuModule,
     TooltipModule,
     ChipsModule
-  ]
+  ],
 })
 export class PrimengModule { }
