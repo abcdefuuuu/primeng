@@ -83,7 +83,8 @@ import { ChipsModule } from 'primeng/chips';
     ImageModule,
     TabMenuModule,
     TooltipModule,
-    ChipsModule
+    ChipsModule,
+
   ],
 })
 export class PrimengModule { }

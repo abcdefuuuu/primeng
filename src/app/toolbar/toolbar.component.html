@@ -13,4 +13,5 @@
 </p-toolbar>
 <p-sidebar [(visible)]="showSidebar" [baseZIndex]="10000" [showCloseIcon]="false" (onHide)="showSidebar = false">
   <h3>選單</h3>
+  <p-panelMenu [model]="items" [style]="{'width':'250px'}"></p-panelMenu>
 </p-sidebar>
