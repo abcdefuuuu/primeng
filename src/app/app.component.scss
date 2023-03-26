@@ -1,62 +1,96 @@
-
-.example-spacer {
-  flex: 1 1 auto;
+//primng
+p-card {
+  margin: 10px;
 }
-a {
-  span {
-    color: #fff;
+
+//強制更改Primeng預設樣式
+:host ::ng-deep {
+  .p-card {
+    border-radius: 10px; //元素的外邊框圓角 px越大越圓 google
+  }
+
+  .p-button {
+    border-radius: 6px;
+  }
+
+  .p-inputtext {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .p-password,
+  .p-dropdown {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
+
+  .p-calendar {
+    width: 100%;
   }
 }
-
-.demo-app-header {
-  position: fixed;
-  top: 0;
-  z-index: 2;
+//display: flex將元素設置為flex容器，flex-direction: row將子元素排列在同一行上，align-items: center將子元素垂直居中對齊。
+.flex-center {
+  //讓子元素自動佈局
+  display: flex;
+  //flex-direction: row;
+  //將子元素在容器的垂直方向居中對齊
+  align-items: center;
+  margin-top: 1%;
 }
 
-.demo-container,
-.demo-sidenav {
-  //width: 180px;
-  //position: fix;
-  padding-top: 64px;
-  height: 100%;
+.ml-80 {
+  margin-left: 80%;
 }
 
-mat-sidenav-content {
-  background-color: #fff;
+p-checkbox {
+  //checkbox元件之間的間距
+  margin-left: 10px;
+  //框框跟label之間的間距
+  margin-right: 5px;
+}
+
+p-radioButton {
+  //radioButton元件之間的間距
+  margin-left: 10px;
+  //框框跟label之間的間距
+  margin-right: 5px;
+}
+
+p-button,
+button {
+  margin-right: 5px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  border-radius: 6px;
+}
+
+textarea {
   width: 100%;
 
-  padding-top: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
-mat-list {
-  width: 180px;
-
-  .mat-list-item {
-    cursor: pointer; // 當滑鼠移動過去改變游標
-
-    // 當滑鼠移動過去
-    &:hover {
-      color: rgb(40, 40, 40);
-      background-color: rgba(0, 0, 0, 0.08);
-
-      .mat-list-icon {
-        color: #6e6e6e;
-        // color: #3f51b5;
-      }
-    }
-
-    //當選擇了該列表，保留型態
-    &.active {
-      color: #000;
-      background-color: rgba(0, 0, 0, 0.09);
-
-      .mat-list-icon {
-        color: #000;
-        // color: #3f51b5;
-      }
-    }
-  }
+h3 {
+  text-align: center;
+  font-weight: bold;
+  //上、右、下、左
+  margin: 0 0 10px 0;
 }
+
+
+// .radio-buttons {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   margin-top: 2%;
+// }
+
+// .p-checkbox {
+//   margin-top: 8%;
+// }

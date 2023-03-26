@@ -1,6 +1,7 @@
 <h1>表格練習</h1>
 <div class="table">
-  <p-table [value]="human" [tableStyle]="{'min-width': '50rem'}" sortMode="multiple" [rows]="10" [paginator]="true">
+  <p-table [value]="human" [tableStyle]="{'min-width': '50rem'}" sortMode="multiple" [rowsPerPageOptions]="[5, 10, 20]" [paginator]="true" [totalRecords]="120" [showCurrentPageReport]="true"
+  currentPageReportTemplate="{first} - {last} of {totalRecords}">
     <ng-template pTemplate="header" let-columns>
       <tr>
         <th pSortableColumn="position" style="width:20%">編號 <p-sortIcon field="position"></p-sortIcon></th>

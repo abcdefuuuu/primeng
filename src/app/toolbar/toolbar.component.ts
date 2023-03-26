@@ -12,39 +12,43 @@ export class ToolbarComponent {
   items: MenuItem[] = [];
   ngOnInit() {
     this.items = [
+      //無下拉選單
       {
-        label: 'Edit',
-        icon: 'pi pi-fw pi-pencil',
-        routerLink: 'form',
+        label: '表單',
+        icon: 'pi pi-fw pi-file-edit',
+        routerLink: ['/form'],
       },
+      //有下拉選單(範例)
       {
-        label: 'File',
-        icon: 'pi pi-pw pi-file',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            { label: 'User', icon: 'pi pi-fw pi-user-plus' },
-            { label: 'Filter', icon: 'pi pi-fw pi-filter' }
-          ]
-        },
-        { label: 'Open', icon: 'pi pi-fw pi-external-link' },
-        { separator: true },
-        { label: 'Quit', icon: 'pi pi-fw pi-times' }
+        label: '社群',
+        icon: 'pi pi-fw pi-comments',
+        items: [
+          {
+            label: 'Facebook',
+            icon: 'pi pi-fw pi-facebook',
+            routerLink: ['/imformation']
+            // items: [
+            //   {
+            //     label: 'Bookmark',
+            //     icon: 'pi pi-fw pi-bookmark'
+            //   },
+            //   {
+            //     label: 'Video',
+            //     icon: 'pi pi-fw pi-video'
+            //   }
+            // ]
+          },
+          {
+            label: 'Twitter',
+            icon: 'pi pi-fw pi-twitter',
+            routerLink: ['/survey'],
+          },
+          {
+            label: 'Instagram',
+            icon: 'pi pi-fw pi-instagram'
+          }
         ]
       },
-      {
-        label: 'Edit',
-        icon: 'pi pi-fw pi-pencil',
-      },
-      {
-        label: 'Help',
-        icon: 'pi pi-fw pi-question',
-      },
-      {
-        label: 'Actions',
-        icon: 'pi pi-fw pi-cog',
-      }
     ];
   }
 }

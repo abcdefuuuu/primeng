@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 //先定義定義物件的類別
 interface People {
-  position?:number;
+  position:number;
   name:string;
   height:number;
   weight:number;

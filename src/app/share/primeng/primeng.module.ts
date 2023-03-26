@@ -5,6 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { MenubarModule } from 'primeng/menubar';
 import { TableModule } from 'primeng/table';
+import { RadioButtonModule } from 'primeng/radiobutton';
 import { ButtonModule } from 'primeng/button';
 import { FieldsetModule } from 'primeng/fieldset';
 import { CardModule } from 'primeng/card';
@@ -84,7 +85,7 @@ import { ChipsModule } from 'primeng/chips';
     TabMenuModule,
     TooltipModule,
     ChipsModule,
-
+    RadioButtonModule,
   ],
 })
 export class PrimengModule { }
